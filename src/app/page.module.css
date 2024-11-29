@@ -6,13 +6,11 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  display: flex; 
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
   min-height: 90svh;
-  padding: 0;
-  gap: 64px;
+  padding: 4rem 0 0 0;
   font-family: var(--font-geist-sans);
 }
 
@@ -28,10 +26,8 @@
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  width: 100%;
+  max-width: 500px;
 }
 
 .main ol {
