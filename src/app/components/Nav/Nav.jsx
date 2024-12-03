@@ -2,6 +2,7 @@ import Link from 'next/link';
 import './Nav.css';
 
 export default function Nav() {
+
   return (
     <nav className="nav">
       <ul>

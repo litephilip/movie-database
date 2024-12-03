@@ -39,12 +39,13 @@ h1 {
 .movie-title {
     color: #ffc107;
     font-size: 1.25rem;
-    margin: 0.5rem 0;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
 }
 
 .movie-details {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 0.9rem;
     color: #ccc;
 }
@@ -52,6 +53,12 @@ h1 {
 .year {
     font-size: 1rem;
     font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
 }
 
 .imdb-rating {
@@ -65,6 +72,9 @@ h1 {
 @media (max-width: 1024px) { 
     .movie-result {
         grid-template-columns: 1fr 1fr;
+    }
+    .movie-card {
+        height: auto;
     }
 }
   

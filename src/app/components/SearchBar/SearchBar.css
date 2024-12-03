@@ -32,17 +32,22 @@
     outline: none;
 }
 
-.search-bar-button {
+.search-bar-button, .delete-button {
     background: transparent;
     border: none;
     padding: 0.5rem;
+    margin-right: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     color: #888;
+    transition: color 0.3s ease;
 }
 
+.delete-button:hover {
+    color: #ffc107;
+}
 .search-bar-button:hover {
     color: #000;
 }
