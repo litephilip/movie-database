@@ -10,6 +10,8 @@ export default function SearchBar({ onSearch }) {
     if (query.trim() !== '') {
       onSearch(query);
     }
+    
+    sessionStorage.removeItem('movies');
   };
 
   return (

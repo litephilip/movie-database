@@ -7,7 +7,7 @@ import './MovieSearch.css';
 
 export default function MovieSearch() {
   const [movies, setMovies] = useState(() => {
-    const savedMovies = localStorage.getItem('movies');
+    const savedMovies = sessionStorage.getItem('movies');
     return savedMovies ? JSON.parse(savedMovies) : [];
   });
   const [error, setError] = useState(null);
@@ -27,9 +27,9 @@ export default function MovieSearch() {
         }));
 
         console.log('data', filteredMovies);
-
         setMovies(filteredMovies);
         setError(null);
+        sessionStorage.setItem('movies', JSON.stringify(filteredMovies));
       } else {
         setMovies([]);
         setError(data.Error);
@@ -51,7 +51,7 @@ export default function MovieSearch() {
 
       <div className="movie-result">
         {movies.map((movie) => (
-          <Link href={`/${movie.imdbRating}`} key={movie.imdbID}>
+          <Link href={`/${movie.imdbID}`} key={movie.imdbID}>
             <div className="movie-card">
               <img
                 src={movie.Poster !== 'N/A' ? movie.Poster : '/placeholder.jpg'}
