@@ -15,9 +15,6 @@ export default function SearchBar({ onSearch }) {
   return (
     <>
       <form className="search-bar" onSubmit={handleSubmit}>
-        {/* <select className="search-bar-select">
-          <option value="all">All</option>
-        </select> */}
         <input
           type="text"
           className="search-bar-input"
