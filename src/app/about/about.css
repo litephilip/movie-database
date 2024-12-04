@@ -5,3 +5,13 @@
     align-items: center;
     height: 100vh;
 }
+
+@media (max-width: 600px) {
+    .about-page {
+        padding: 32px;
+        padding-bottom: 80px;
+    }
+    .about-us-paragraph {
+        text-align: center;
+    }
+}

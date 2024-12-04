@@ -42,7 +42,6 @@ export default function MovieSearch() {
           Year: movie.Year,
         }));
 
-        console.log('data', filteredMovies);
         setMovies(filteredMovies);
         setError(null);
 

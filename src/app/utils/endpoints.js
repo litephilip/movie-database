@@ -6,7 +6,6 @@ export async function getMovieDetails(imdbID) {
   );
 
   const data = await response.json();
-  console.log('getDETAISL', data);
   
   return data;
 }

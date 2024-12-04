@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <p>© {currentYear} Moviie Database</p>
+      <p>© {currentYear} Movie Database</p>
       <p>Created by Philip Gistedt</p>
     </footer>
   );

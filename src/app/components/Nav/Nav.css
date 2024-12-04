@@ -31,7 +31,7 @@ header nav ul li a:hover {
 
 @media (max-width: 600px) {
     header nav ul {
-        padding-top: 1rem;
+        padding-top: 0;
         gap: 1rem;
     }
     header nav ul li a {

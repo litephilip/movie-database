@@ -12,11 +12,13 @@ export default function SearchBar({ onSearch, hasMovies }) {
     }
 
     sessionStorage.removeItem('movies');
+    sessionStorage.removeItem('query');
   };
 
   const handleClear = () => {
     setQuery('');
     onSearch('');
+    sessionStorage.removeItem('query');
     sessionStorage.removeItem('movies');
   };
 
