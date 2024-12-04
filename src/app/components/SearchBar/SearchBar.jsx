@@ -42,7 +42,11 @@ export default function SearchBar({ onSearch, hasMovies }) {
             <X size={20} strokeWidth={2.75} />
           </button>
         )}
-        <button type="submit" className="search-bar-button">
+        <button
+          data-testid="search-test-button"
+          type="submit"
+          className="search-bar-button"
+        >
           <Search size={20} />
         </button>
       </form>
