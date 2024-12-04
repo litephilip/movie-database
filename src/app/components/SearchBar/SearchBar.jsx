@@ -17,6 +17,7 @@ export default function SearchBar({ onSearch, hasMovies }) {
   const handleClear = () => {
     setQuery('');
     onSearch('');
+    sessionStorage.removeItem('movies');
   };
 
   return (

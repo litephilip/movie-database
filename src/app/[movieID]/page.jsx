@@ -1,4 +1,6 @@
-import { getMovieDetails } from '../utils/Endpoints';
+import { getMovieDetails } from '../utils/endpoints';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 import './MovieDetails.css';
 
 export default async function MovieDetails({ params }) {
@@ -17,6 +19,10 @@ export default async function MovieDetails({ params }) {
   return (
     <div className="movie-details">
       <div className="movie-header">
+        <Link href="/" className="back-button">
+          <ArrowLeft size={32} strokeWidth={2.5} />
+          <span>Back to Home</span>
+        </Link>
         <img
           className="movie-poster"
           src={movie.Poster !== 'N/A' ? movie.Poster : '/placeholder.jpg'}
